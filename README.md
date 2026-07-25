@@ -1,75 +1,79 @@
-# React + TypeScript + Vite
+# Slenderman Research Foundation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fan-made web project inspired by the Slenderman myth, recreating the atmosphere of early-2010s paranormal websites. The site is designed as a fictional research archive where visitors can explore sightings, historical references, photographs, and stories related to the legend.
 
-Currently, two official plugins are available:
+> **Disclaimer:** This is a fictional fan project created for educational and portfolio purposes. It is not an ARG or an official Slenderman website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+![Homepage Preview](./src/assets/images/first.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🕸️ Nostalgic early-2010s web design
+- 📖 Fictional Slenderman research archive
+- 📚 Library of sightings and historical references
+- 🖼️ Image gallery
+- ❓ Frequently Asked Questions (FAQ)
+- 📩 Contact form for fictional reports
+- 📱 Fully responsive layout
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Built With
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
 
+
+---
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/vicenteeinu/slenderman-research-foundation.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd slenderman-research-foundation
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## Roadmap
+
+- [x] Initial project setup
+- [x] Homepage layout
+- [ ] Library page
+- [ ] FAQ page
+- [ ] Contact page
+- [ ] Mobile optimization
+- [ ] Final polishing and deployment
+
+---
+
+## License
+
+This project is intended for educational and portfolio purposes only.
+
+Slenderman is a fictional character originally created by Eric Knudsen (Victor Surge). All rights to the original character belong to their respective creators.

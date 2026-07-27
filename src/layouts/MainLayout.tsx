@@ -11,7 +11,7 @@ interface MainLayoutProps {
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <PageWrapper>
-      <div className="w-full mx-auto">
+      <div className="flex flex-col flex-1 w-full">
           <Header/>
           <NavBar/>
 
